@@ -82,7 +82,7 @@ This approach ensures that you maintain **code clarity** and **minimize risks**,
 
 However, for professional, large-scale, or collaborative projects, it’s better to include only the specific libraries you need for better performance, clarity, and compatibility.
 
--- 
+---
 
 The compilation process in C++ involves several stages that convert your source code into an executable program :
 
