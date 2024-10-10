@@ -113,3 +113,39 @@ The compilation process in C++ involves several stages that convert your source 
 This multi-step process ensures that the code is transformed in stages, allowing errors to be caught early (e.g., syntax errors during compilation) and optimizations to be applied effectively.
 
 ---
+
+In C++, **macros** are pieces of code that are defined once and can be used multiple times in your program. They are handled by the **preprocessor** before the actual compilation starts. Macros can be used to define constants or even small code snippets. They make code writing faster, but they should be used carefully.
+
+### How Do Macros Work?
+- A macro is defined using the `#define` directive.
+- The preprocessor replaces every occurrence of the macro in your code with the value or code you define for it before the code is compiled.
+
+### Simple Example
+Suppose you want to define a constant value for the number of days in a week:
+
+```cpp
+#define DAYS_IN_WEEK 7
+```
+
+Now, anywhere in your code where you write `DAYS_IN_WEEK`, the preprocessor will replace it with `7`.
+
+```cpp
+#include <iostream>
+#define DAYS_IN_WEEK 7
+
+int main() {
+    int totalDays = 3 * DAYS_IN_WEEK;
+    std::cout << "Total days: " << totalDays << std::endl;  // Output: Total days: 21
+    return 0;
+}
+```
+
+In this example:
+- `#define DAYS_IN_WEEK 7` creates a macro named `DAYS_IN_WEEK`.
+- When `DAYS_IN_WEEK` is used in the code, the preprocessor replaces it with `7` before compiling.
+
+### Why Use Macros?
+- **Quick Constants**: Easily create constants like `PI` or `MAX_SIZE` without using variables.
+- **Code Reusability**: Create small reusable code snippets.
+
+However, macros don’t follow the same rules as variables or functions (they don’t have types or parameter checking), so they can sometimes lead to errors if not used carefully.
