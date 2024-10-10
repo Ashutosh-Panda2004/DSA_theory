@@ -149,3 +149,27 @@ In this example:
 - **Code Reusability**: Create small reusable code snippets.
 
 However, macros don’t follow the same rules as variables or functions (they don’t have types or parameter checking), so they can sometimes lead to errors if not used carefully.
+
+---
+
+No, C++ is **not a purely object-oriented language** because it supports both **procedural programming** (like C) and **object-oriented programming** (OOP). Here's why:
+
+### Why C++ is **Not** Purely Object-Oriented:
+1. **Supports Procedural Programming**:
+   - You can write C++ programs without using classes or objects, relying only on functions and variables, just like in C.
+   
+2. **Global Variables and Functions**:
+   - C++ allows global variables and functions outside of any class, which is not typical for a purely object-oriented language.
+
+3. **No Requirement for Classes**:
+   - In purely object-oriented languages (like Java), every piece of code must be within a class. In C++, you can write code without defining any classes.
+
+### Why C++ **Is** Object-Oriented:
+1. **Supports Classes and Objects**:
+   - C++ has full support for OOP concepts like classes, objects, inheritance, polymorphism, and encapsulation.
+   
+2. **Encapsulation and Abstraction**:
+   - You can use C++ to create complex systems with data hiding and abstraction, which are key principles of object-oriented design.
+
+### Conclusion
+C++ is **multi-paradigm**: it supports both procedural and object-oriented programming, making it flexible but not purely object-oriented.
