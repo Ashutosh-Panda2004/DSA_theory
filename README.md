@@ -81,3 +81,35 @@ This approach ensures that you maintain **code clarity** and **minimize risks**,
 - **Prototyping**: If you’re quickly testing or prototyping code and don’t care about compilation time or portability, it can be a shortcut.
 
 However, for professional, large-scale, or collaborative projects, it’s better to include only the specific libraries you need for better performance, clarity, and compatibility.
+
+-- 
+
+The compilation process in C++ involves several stages that convert your source code into an executable program :
+
+### 1. **Preprocessing**
+   - The **preprocessor** reads your source code (`.cpp` files) and processes all preprocessor directives, such as `#include` and `#define`.
+   - It replaces macros, includes the contents of header files, and removes comments.
+   - The output of this stage is a pure C++ code file with all directives resolved, called a **preprocessed file**.
+
+### 2. **Compilation**
+   - The **compiler** takes the preprocessed file and translates the C++ code into **assembly code** for the target architecture.
+   - This step checks for syntax errors, performs type checking, and optimizes code at the source level.
+   - The output of this stage is an **assembly file** (often with a `.s` extension).
+
+### 3. **Assembly**
+   - The **assembler** converts the assembly code into **machine code**, producing an **object file** (usually with a `.o` or `.obj` extension).
+
+### 4. **Linking**
+   - The **linker** takes all the object files generated from your code and combines them with other necessary libraries (e.g., standard libraries, external libraries) to create a complete executable.
+   - It resolves function and variable references, making sure everything points to the correct location in the executable file.
+   - The final output of this stage is an **executable program** (like `.exe` on Windows or no extension on Unix-based systems).
+
+### Summary of Stages:
+1. **Preprocessing**: Processes directives (`#include`, `#define`) and produces a pure C++ file.
+2. **Compilation**: Converts preprocessed code into assembly code, checking for syntax errors.
+3. **Assembly**: Translates assembly code into object files (machine code).
+4. **Linking**: Combines object files and libraries to produce the final executable.
+
+This multi-step process ensures that the code is transformed in stages, allowing errors to be caught early (e.g., syntax errors during compilation) and optimizations to be applied effectively.
+
+---
