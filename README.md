@@ -48,8 +48,6 @@ int result = MathFunctions::add(5, 3);
    - If you use `using namespace` at the global scope (outside of functions), it affects the entire file.
    - This can be risky in large projects where you may include libraries with overlapping names.
 
-3. **Header Files Problem**:
-   - Using `using namespace` in header files is particularly dangerous because any file that includes this header will inherit those namespace elements, which may lead to conflicts or unexpected behavior.
 
 ### When Is It Okay to Use `using namespace`?
 - **Local Scope**: It’s safe to use it within a function or a small code block where you can control what happens.
