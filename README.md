@@ -176,7 +176,7 @@ C++ is **multi-paradigm**: it supports both procedural and object-oriented progr
 
 ---
 
-In C++, object-oriented programming allows us to create custom data types by defining classes. These classes can model real-world entities or abstract concepts by encapsulating related data and behaviors. For example, if we want to create a custom data type to represent a geometric line, we can define a `Line` class like this:
+In C++, object-oriented programming allows us to create custom data types / user defined datatypes by defining classes. These classes can model real-world entities or abstract concepts by encapsulating related data and behaviors. For example, if we want to create a custom data type to represent a geometric line, we can define a `Line` class like this:
 
 ```cpp
 #include <iostream>
