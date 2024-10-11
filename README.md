@@ -284,3 +284,74 @@ int main() {
 This will give you the exact sizes of the data types for your specific system and compiler.
 
 ---
+
+### Basic Units
+1. **Bit (b)**: The smallest unit of data in computing, either a 0 or a 1.
+2. **Byte (B)**: A collection of 8 bits. 
+   - 1 Byte = 8 bits
+
+### Common Conversions
+1. **Bits to Bytes**:
+   - 1 Byte (B) = 8 bits (b)
+   - 1 Kilobit (Kb) = 1,000 bits = 125 Bytes
+   - 1 Megabit (Mb) = 1,000,000 bits = 125,000 Bytes
+   - 1 Gigabit (Gb) = 1,000,000,000 bits = 125,000,000 Bytes
+   - 1 Terabit (Tb) = 1,000,000,000,000 bits = 125,000,000,000 Bytes
+
+2. **Bytes to Bits**:
+   - 1 Byte = 8 bits
+   - 1 Kilobyte (KB) = 1,024 Bytes = 8,192 bits
+   - 1 Megabyte (MB) = 1,024 KB = 8,388,608 bits
+   - 1 Gigabyte (GB) = 1,024 MB = 8,589,934,592 bits
+   - 1 Terabyte (TB) = 1,024 GB = 8,796,093,022,208 bits
+   - 1 Petabyte (PB) = 1,024 TB = 9,007,199,254,740,992 bits
+
+### Storage Units (Based on 1024 Multiples)
+1. **Kilobyte (KB)**: 
+   - 1 KB = 1,024 Bytes
+
+2. **Megabyte (MB)**: 
+   - 1 MB = 1,024 KB = 1,048,576 Bytes
+
+3. **Gigabyte (GB)**: 
+   - 1 GB = 1,024 MB = 1,073,741,824 Bytes
+
+4. **Terabyte (TB)**: 
+   - 1 TB = 1,024 GB = 1,099,511,627,776 Bytes
+
+5. **Petabyte (PB)**: 
+   - 1 PB = 1,024 TB = 1,125,899,906,842,624 Bytes
+
+6. **Exabyte (EB)**: 
+   - 1 EB = 1,024 PB = 1,152,921,504,606,846,976 Bytes
+
+7. **Zettabyte (ZB)**: 
+   - 1 ZB = 1,024 EB = 1,180,591,620,717,411,303,424 Bytes
+
+8. **Yottabyte (YB)**: 
+   - 1 YB = 1,024 ZB = 1,208,925,819,614,629,174,706,176 Bytes
+
+### Networking Units (Based on 1000 Multiples)
+1. **Kilobit (Kb)**:
+   - 1 Kb = 1,000 bits
+
+2. **Megabit (Mb)**: 
+   - 1 Mb = 1,000 Kb = 1,000,000 bits
+
+3. **Gigabit (Gb)**: 
+   - 1 Gb = 1,000 Mb = 1,000,000,000 bits
+
+4. **Terabit (Tb)**: 
+   - 1 Tb = 1,000 Gb = 1,000,000,000,000 bits
+
+5. **Petabit (Pb)**: 
+   - 1 Pb = 1,000 Tb = 1,000,000,000,000,000 bits
+
+### Summary of Common Conversions
+- **1 Byte (B) = 8 bits**
+- **1 Kilobyte (KB) = 1,024 Bytes (B)**
+- **1 Megabyte (MB) = 1,024 Kilobytes (KB)**
+- **1 Gigabyte (GB) = 1,024 Megabytes (MB)**
+- **1 Terabyte (TB) = 1,024 Gigabytes (GB)**
+
+These conversions are widely used in computing, networking, and data storage.
