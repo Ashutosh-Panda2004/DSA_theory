@@ -173,3 +173,60 @@ No, C++ is **not a purely object-oriented language** because it supports both **
 
 ### Conclusion
 C++ is **multi-paradigm**: it supports both procedural and object-oriented programming, making it flexible but not purely object-oriented.
+
+---
+
+In C++, object-oriented programming allows us to create custom data types by defining classes. These classes can model real-world entities or abstract concepts by encapsulating related data and behaviors. For example, if we want to create a custom data type to represent a geometric line, we can define a `Line` class like this:
+
+```cpp
+#include <iostream>
+#include <cmath>
+
+class Point {
+public:
+    double x, y;
+
+    Point(double x_val = 0, double y_val = 0) : x(x_val), y(y_val) {}
+};
+
+class Line {
+private:
+    Point start;
+    Point end;
+
+public:
+    // Constructor to initialize the line with two points
+    Line(const Point& startPoint, const Point& endPoint) : start(startPoint), end(endPoint) {}
+
+    // Method to calculate the length of the line
+    double length() const {
+        return std::sqrt(std::pow(end.x - start.x, 2) + std::pow(end.y - start.y, 2));
+    }
+
+    // Method to display line information
+    void display() const {
+        std::cout << "Line starts at (" << start.x << ", " << start.y << ") "
+                  << "and ends at (" << end.x << ", " << end.y << ").\n";
+        std::cout << "Length of the line: " << length() << "\n";
+    }
+};
+
+int main() {
+    Point p1(0, 0);
+    Point p2(3, 4);
+    Line line(p1, p2);
+
+    line.display();
+
+    return 0;
+}
+```
+
+### Explanation
+- **Point Class**: Represents a point in 2D space with `x` and `y` coordinates.
+- **Line Class**: Represents a line defined by two points: `start` and `end`. It includes:
+  - A constructor to initialize the line with two points.
+  - A method (`length()`) to calculate the length of the line using the distance formula.
+  - A method (`display()`) to print information about the line.
+
+This code defines a custom data type `Line`, showcasing the object-oriented programming capabilities of C++.
