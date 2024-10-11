@@ -230,3 +230,57 @@ int main() {
   - A method (`display()`) to print information about the line.
 
 This code defines a custom data type `Line`, showcasing the object-oriented programming capabilities of C++.
+
+---
+
+The size of different data types in C++ can vary based on the system architecture (e.g., 32-bit or 64-bit). However, the following are the typical sizes for fundamental data types on most modern platforms (64-bit systems):
+
+### Fundamental Data Types and Their Typical Sizes:
+| Data Type        | Typical Size (in bytes) | Range                               |
+|------------------|-------------------------|-------------------------------------|
+| `bool`           | 1                       | `true` or `false`                  |
+| `char`           | 1                       | `-128` to `127` (signed)           |
+| `unsigned char`  | 1                       | `0` to `255`                       |
+| `wchar_t`        | 2 or 4                  | Platform-dependent                 |
+| `char16_t`       | 2                       | UTF-16 characters                  |
+| `char32_t`       | 4                       | UTF-32 characters                  |
+| `short`          | 2                       | `-32,768` to `32,767`              |
+| `unsigned short` | 2                       | `0` to `65,535`                    |
+| `int`            | 4                       | `-2,147,483,648` to `2,147,483,647`|
+| `unsigned int`   | 4                       | `0` to `4,294,967,295`             |
+| `long`           | 4 or 8                  | Platform-dependent                 |
+| `unsigned long`  | 4 or 8                  | Platform-dependent                 |
+| `long long`      | 8                       | `-9,223,372,036,854,775,808` to `9,223,372,036,854,775,807` |
+| `unsigned long long` | 8                   | `0` to `18,446,744,073,709,551,615`|
+| `float`          | 4                       | ~6-7 decimal digits precision      |
+| `double`         | 8                       | ~15-16 decimal digits precision    |
+| `long double`    | 8, 12, or 16            | Platform-dependent precision       |
+| `void*` (pointer)| 8 (on 64-bit systems)   | Address of any type                |
+
+### Notes:
+1. **Architecture Dependency**: The sizes of some types like `long`, `void*`, and `long double` can vary based on the system architecture and compiler implementation.
+2. **`char` Types**: `char`, `unsigned char`, and `signed char` all have a size of 1 byte, but their range differs based on whether they are signed or unsigned.
+3. **Pointer Types**: On a 64-bit system, all pointer types (`int*`, `char*`, etc.) typically have a size of 8 bytes, while on a 32-bit system, they usually have a size of 4 bytes.
+
+To check the size of any data type on your specific system, you can use `sizeof()`:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Size of int: " << sizeof(int) << " bytes" << endl;
+    cout << "Size of float: " << sizeof(float) << " bytes" << endl;
+    cout << "Size of double: " << sizeof(double) << " bytes" << endl;
+    cout << "Size of char: " << sizeof(char) << " byte" << endl;
+    cout << "Size of bool: " << sizeof(bool) << " byte" << endl;
+    cout << "Size of long: " << sizeof(long) << " bytes" << endl;
+    cout << "Size of long long: " << sizeof(long long) << " bytes" << endl;
+    cout << "Size of wchar_t: " << sizeof(wchar_t) << " bytes" << endl;
+    return 0;
+}
+```
+
+This will give you the exact sizes of the data types for your specific system and compiler.
+
+---
